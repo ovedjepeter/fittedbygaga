@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FittedByGaga - feminine, confident style for every occasion."
+    />
+    <title>FittedByGaga |Wear Your Confidence</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="announcement">
+      A little Confidence looks dood on you. New pieces, new energy
+    </div>
+    <header>
+      <nav class="nav" aria-label="main navigation">
+        <a class="logo" href="#Home">Fitted<span>ByGaga</span></a>
+        <div class="nav-links" id="navLinks">
+          <a href="#Home">Home</a>
+          <a href="#Collections">Collections</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-actions">
+          <button class="cart-button" type="button" onclick="showCart()">
+            Bag <span>0</span>
+          </button>
+          <button
+            class="menu-button"
+            type="button"
+            aria-label="Toggle menu"
+            onclick="togglemenu()"
+          >
+            ☰
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="Home">
+        <div class="hero-copy">
+          <span class="eyebrow">The FittedByGaga edit</span>
+          <h1>Feel beautiful. <br /><em>Be unforgettable</em></h1>
+          <p>
+            Thouthful pieces, flsttering fits and feminine details made for the
+            way you want <br />
+            to feel - confident, comfortable and completely yourself.
+          </p>
+          <a class="button" href="#shop">Discover the Collection</a>
+        </div>
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Fashion model wearing an elegant outfit"
+        ></div>
+      </section>
+
+      <section class="section" id="Collections">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">Find Your Look</span>
+            <h2>Made for every mood</h2>
+          </div>
+          <p>Easy-to-love pieces for your evryday moments and special plans.</p>
+        </div>
+        <div class="categories">
+          <a class="category" href="#shop" onclick="setfilter('Dresses')">
+            <img src="/pic/WhatsApp Image 2026-09-20 at 22.08.39.jpeg" />
+            <div class="category-label">
+              <strong>Dresses</strong><span>↗</span>
+            </div>
+          </a>
+          <a class="category" href="#shop" onclick="setfilter('Tops')">
+            <img src="/pic/WhatsApp Image 2026-09-20 at 22.08.40.jpeg" />
+            <div class="category-label">
+              <strong>Tops</strong><span>↗</span>
+            </div>
+          </a>
+          <a class="category" href="#shop" onclick="setfilter('Sets')">
+            <img src="/pic/WhatsApp Image 2026-09-20 at 22.10.32.jpeg" />
+            <div class="category-label">
+              <strong>Matching Sets</strong><span>↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+      <div class="products-section" id="shop">
+        <section class="section">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">The pieces you'll reach for</span>
+              <h2>Shop the collections</h2>
+            </div>
+            <p>Simple silhouettes. Beautiful details. Your kind of style</p>
+          </div>
+          <div class="productGrid">
+            <img src="/pic/WhatsApp Image 2026-09-20 at 22.10.32.jpeg" />
+            <img src="/pic/WhatsApp Image 2026-09-20 at 22.10.32.jpeg" />
+          </div>
+          <div class="filters" aria-label="filter products">
+            <button class="filter active" onclick="setfilter('All', this)">
+              All pieces
+            </button>
+            <button class="filter" onclick="setfilter('Dresses', this)">
+              Dresses
+            </button>
+            <button class="filter" onclick="setfilter('Tops , this')">
+              Tops
+            </button>
+            <button class="filter" onclick="setfilter('Sets , this')">
+              Sets
+            </button>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </section>
+      </div>
+      <section class="about us" id="about">
+        <div
+          class="about-image"
+          role="img"
+          aria-label="Fashion editorial style portrait"
+        ></div>
+        <div class="about-copy">
+          <span class="eyebrow">A little about us</span>
+          <h2>Styles that feels like <em>you.</em></h2>
+          <p>
+            FittedByGaga is about celebrating personal style with pieces that
+            help you show up as your most confident self. From everyday
+            favourites to looks that make a moment, every outfit should feel
+            like it belongs to you.
+          </p>
+          <a class="button light" href="#Contact">Get to know us</a>
+        </div>
+      </section>
+      <section class="newsletter" id="contact">
+        <span class="eyebrow">Stay in the loop</span>
+        <h2>A little note from Gaga?</h2>
+        <p>
+          Be first to hear about new arrivals, styles edits and special offers.
+        </p>
+        <form class="newsletter-form" onsubmit="subscribe(event)">
+          <input
+            id="emailinput"
+            type="email"
+            placeholder="Your email address"
+            aria-label="Your email address required"
+          />
+          <button type="submit">Sign me up ↗</button>
+        </form>
+        <p id="newslettermessage" aria-label="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a class="logo" href="#home">Fitted<span>ByGaga</span></a>
+          <p>
+            Feminine style, cnfident energy. Find piecesthat makes you feel like
+            your best-dressed self
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <div class="footer-links">
+            <a href="#shop">Shop all</a><a href="#collections">Collections</a
+            ><a href="#about">About US</a>
+          </div>
+        </div>
+        <div>
+          <h4>Say Hello</h4>
+          <div class="footer-links">
+            <a href="mailto:hello@fittedbygaga.com">Email us</a
+            ><a
+              href="#"
+              onclick="
+                openWhatsApp();
+                return false;
+              "
+              >WhatsApp</a
+            ><a href="#contact">Newsletter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
