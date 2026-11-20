@@ -180,7 +180,7 @@ h1 em {
   color: white;
 }
 .hero-image {
-  background-image: url(/pic/fittedbygaga/WhatsApp\ Image\ 2026-09-20\ at\ 22.10.32.jpeg);
+  background-image: url("/fittedbygaga/pic/WhatsApp\ Image\ 2026-09-20\ at\ 22.10.32.jpeg");
 }
 .section {
   max-width: 1240px;
@@ -357,7 +357,7 @@ h1 em {
 }
 .about-image {
   min-height: 520px;
-  background: url("/pic/fittedbygaga/WhatsApp\ Image\ 2026-09-20\ at\ 22.10.32.jpeg")
+  background: url("/fittedbygaga/pic/WhatsApp\ Image\ 2026-09-20\ at\ 22.10.32.jpeg")
     center/cover;
 }
 .about-copy {
